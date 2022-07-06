@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="estilos6.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Invitación</title>
+</head>
+<body class="fondoNegro">
+    <div class="grid">
+        <header>
+            <div>
+                <h1>Katy Y Tomi</h1>
+                <h2>Nuestros 30</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            
+        </header>
+        <section id="tiempo">
+            <h3>TIEMPO</h3>
+            <p id="demo"></p>
+        </section>
+        <section id="fiesta" class="container">
+            <!-- <img src="imagenes/iconofiesta.png" alt="fiesta" width="150px"> -->
+            <i class="fas fa-glass-cheers"></i>
+            <h2>FIESTA</h2>
+            <br>
+            <p>¡Te espero el Sábado 9 de Julio a las 23:00 hs en el saloncito tal para festejar lo viejo que estamos! Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉</p>
+            <a href="https://www.google.com.ar/maps/place/Rioja+550,+Gral.+Cabrera,+C%C3%B3rdoba/@-32.8158318,-63.8755637,14.92z/data=!4m5!3m4!1s0x95cdc3852475117b:0xedda546167af4d8f!8m2!3d-32.81728!4d-63.8747646" target="blanck" class="botones">Como llegar</a>
+        </section>
+        <!-- <section id="galeria">
+            <div class="grid2 medio container">
+                <div class="foto foto1">
+                    <img src="imagenes/1.jpg" alt="">
+                </div>
+                <div class="foto foto2">
+                    <img src="imagenes/2.jpg" alt="">
+                </div>
+                <div class="foto foto3">
+                    <img src="imagenes/3.jpg" alt="">
+                </div>
+                <div class="foto foto4">
+                    <img src="imagenes/4.jpg" alt="">
+                </div>
+            </div>
+        </section> -->
+        <section id="confirmacion">
+            <h2>CONFIRMACIÓN DE ASISTENCIA</h2>
+            <p>Cuento con tu presencia. ¡Confirmá tu asistencia!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6i-4KBOYkb5Ts8L5K_qFSKki-FSgBNroG1GkjNHv79W_DHg/viewform?usp=sf_link" class="botones" target="blanck">Confirmar Asistencia</a>
+        </section>
+        <section id="instagram">
+            <div>
+                <i class="fab fa-instagram"></i>
+                <h2>#cumplekatyytomi</h2>
+                <p>¡Preparate para esta gran fiesta! Usá el Hashtag de la fiesta en tus fotos o videos.</p>
+                <a href="" class="botones">Abrir Instagram</a>
+            </div>
+        </section>
+        <section id="canciones">
+            <h2>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h2>
+            <p>¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHaI416Ls3-BgIIYPBi3ptbwU6SpUD0I3SL7O5uUg53Vsw2Q/viewform?usp=sf_link" class="botones"target="blanck">Sugerir Canción</a>
+        </section>
+        <section id="gracias">
+            <h4>¡Acordate de traer alcohol!</h4>
+        </section>
+        <footer>
+            Derechos reservados para pugs inc
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 9, 2022 23:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "¡Evento Finalizado!";
+          }
+        }, 1000);
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

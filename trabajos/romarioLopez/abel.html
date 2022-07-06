@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="estilos6.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Invitación</title>
+</head>
+<body>
+    <!-- COLOCAR TITULO Y NOMBRE DE LAS PERSONAS -->
+    <div class="grid">
+        <header>
+            <div>
+                <h1>Romario y Laura</h1>
+                <h2>Nuestro Casamiento</h2>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+        <!-- COLOCAR TIEMPO PARA LA CUENTA REGRESIVA -->
+        <section id="tiempo">
+            <h3>TIEMPO</h3>
+            <p id="demo"></p>
+        </section>
+        <!-- COLOCAR MENSAJE DE DONDE SERA LA FIESTA Y OTROS DATOS -->
+        <section id="fiesta" class="container">
+            <img src="imagenes/icono-fiesta.svg" alt="fiesta" width="150px">
+            <h2>FIESTA</h2>
+            <br>
+            <p>¡Te espero el Sábado 15 de Noviembre a las 19:00 hs en General Cabrera - Estancia Contemporánea, Unquillo, para festejar este gran momento de nuestras vidas! Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉</p>
+            <a href="https://www.google.com.ar/maps/place/Gral.+Cabrera,+C%C3%B3rdoba/@-32.8080875,-63.8864226,14z/data=!3m1!4b1!4m5!3m4!1s0x95cdc38558a81b7f:0x6fec17486bb50aee!8m2!3d-32.8109998!4d-63.8707607" target="blanck" class="botones">Como llegar</a>
+        </section>
+        <!-- COLOCAR TFOTOS PARA LA GALERIA -->
+        <section id="galeria">
+            <div class="grid2 medio container">
+                <div class="foto foto1">
+                    <img src="imagenes/1.jpg" alt="">
+                </div>
+                <div class="foto foto2">
+                    <img src="imagenes/2.jpg" alt="">
+                </div>
+                <div class="foto foto3">
+                    <img src="imagenes/3.jpg" alt="">
+                </div>
+                <div class="foto foto4">
+                    <img src="imagenes/4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- COLOCAR DOCUMENTO GOOGLE DOCS PARA CONFIRMAR LA ASISTENCIA -->
+        <section id="confirmacion">
+            <h2>CONFIRMACIÓN DE ASISTENCIA</h2>
+            <p>Cuento con tu presencia. ¡Confirmá tu asistencia!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0m-lnDDqickeBAXECVBALCFNk5qaYNl2hENX8xNLYuotpCQ/viewform?embedded=true" class="botones" target="blanck">Confirmar Asistencia</a>
+        </section>
+        <!-- COLOCAR LINK DE INSTAGRAM PARA UN # DE FOTOS -->
+        <section id="instagram">
+            <div>
+                <img src="imagenes/instagram.svg" alt="" width="150px">
+                <h2>#AbelyMartha</h2>
+                <p>¡Preparate para esta gran fiesta! Usá el Hashtag de la fiesta en tus fotos o videos.</p>
+                <a href="" class="botones">Abrir Instagram</a>
+            </div>
+        </section>
+        <!-- COLOCAR DOCUMENTO GOOGLE DOCS PARA LAS CANCIONES O MENU -->
+        <section id="canciones">
+            <h2>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h2>
+            <p>¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSedxQ_jyhz7dnG8cIvIWwThKH4c6IIbafaLLwngyLwAV2k02w/viewform?embedded=true" class="botones"target="blanck">Sugerir Canción</a>
+        </section>
+        <!-- COLOCAR EL CODIGO DE VESTIMENTA -->
+        <section id="codigo">
+            <h2>Código de vestimenta</h2>
+            <i class="fas fa-user-tie"></i>
+            <p>Formal sin colores llamativos</p>
+        </section>
+        <!-- COLOCAR EL CBU -->
+        <section id="regalo">
+            <h2>Hacé tu regalo</h2>
+            <i class="fas fa-gift"></i>
+            <p>C.B.U: 33345514451445</p>
+        </section>
+        <!-- COLOCAR UN AGRADECIMIENTO -->
+        <section id="gracias">
+            <h4>¡Gracias por acomapañarnos a nuestro casamiento!</h4>
+        </section>
+        <!-- COLOCAR EL FOOTER CORRESPONDIENTE -->
+        <footer>
+            Derechos reservados para pugs inc
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 15, 2022 12:13:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "¡Evento Finalizado!";
+          }
+        }, 1000);
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

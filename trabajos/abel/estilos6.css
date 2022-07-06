@@ -1,0 +1,275 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Pinyon+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 3px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    
+}
+
+/* Etiquetas */
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1em+1vw);
+}
+h2{
+    font-size: calc(2em+2vw);
+}
+
+/* clases en general */
+.grid{
+    display: grid;
+}
+.grid2{
+    display: grid;
+    grid-template-areas:    "foto1 foto2"
+                            "foto3 foto4";
+    grid-row-gap: 3%;
+    grid-column-gap: 3%;
+}
+.row{
+    padding-right: 0;
+}
+.botones{
+    background: #b27878;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px black;
+    font-size: calc(1rem+1wv);
+    transition: all 1s;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.botones:hover{
+    text-decoration: none;
+    color: #b27878;
+    background: white;
+    transform:scale(1.2,1.2);
+    border: 0.2px solid #b27878;
+}
+.foto img{
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+.foto{
+    width: 100%;
+    transition: all 1s;
+    z-index: 0;
+
+}
+.foto1{
+    grid-area: foto1;
+    justify-self: right;
+}
+.foto2{
+    grid-area: foto2;
+    justify-self: left;
+}
+.foto3{
+    grid-area: foto3;
+    justify-self: right;
+}
+.foto4{
+    grid-area: foto4;
+    justify-self: left;
+}
+.foto:hover{
+    transform: scale(1.4,1.4);
+    z-index: 1;
+}
+.medio{
+    justify-content: center;
+}
+
+
+/* Seccion header */
+header{
+    background: url(imagenes/casamiento4.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    height: 100vh;
+}
+header div{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+header div h1{
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px black;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Pinyon Script', cursive;
+}
+
+header div i{
+    font-size: 2rem;
+    animation-name: flecha;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes flecha{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+}
+
+
+/* Seccion Tiempo */
+#tiempo{
+    grid-template-columns: 1fr;
+    background: #b27878;
+    color: white;
+    letter-spacing: 3px;
+    padding:10px 0 10px 0;
+}
+#tiempo h3{
+    font-size: 1rem;
+}
+#tiempo p{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* Seccion Fiesta */
+#fiesta{
+    grid-template-columns: 1fr;
+    margin-top: 25%;
+}
+#fiesta p{
+    margin-bottom: 50px;
+}
+
+/* Seccion Galeria */
+#galeria{
+    grid-template-columns: 1fr;
+    margin-top: 25%;
+}
+/* Seccion Confirmacion */
+#confirmacion{
+    grid-template-columns: 1fr;
+    margin-top: 25%;
+}
+#confirmacion p{
+    margin-bottom: 50px;
+}
+
+/* Seccion Instagram */
+#instagram{
+    grid-template-columns: 1fr;
+    margin-top: 25%;
+    background: url(imagenes/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#instagram div{
+    padding: 100px 0 100px 0;
+}
+#instagram p{
+    margin-bottom: 50px;
+}
+
+/* Seccion Cancion */
+#canciones{
+    grid-template-columns: 1fr;
+    margin-top: 25%;
+}
+#canciones p{
+    margin-bottom: 50px;
+}
+/* Seccion codigo */
+#codigo{
+    grid-template-columns: 1fr;
+    margin: 10% 0 0 0;
+    background:#81e0ac;
+    background: #b27878;
+    padding: 5% 0 5% 0;
+    color: white;
+}
+#codigo h2{
+    margin-bottom: 2%;
+}
+#codigo i{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+
+/* Seccion regalo */
+#regalo{
+    grid-template-columns: 1fr;
+    margin: 10% 0 10% 0;
+}
+#regalo h2{
+    margin-bottom: 2%;
+}
+#regalo i{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+/* Seccion Gracias */
+#gracias{
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(to right, #a7741a, #e9c95b);
+    padding: 3% 0 3% 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#gracias h4{
+    font-size: 1rem!important;
+}
+
+/* Footer */
+footer{
+    background: #616161;
+    color: white;
+    padding: 2% 0;
+}
+@media (min-width:480px){
+    .foto{
+        justify-self: center;
+    }
+    .grid2{
+        grid-template-areas: "foto1 foto2 foto3 foto4";
+
+    }
+    
+
+}
+
+
+@media (min-width:720px){
+    #fiesta,#instagram,#galeria,#confirmacion,#canciones{
+        margin-top: 10%;
+    }
+    #gracias{
+        margin-top: 0;
+    }
+}
