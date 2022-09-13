@@ -37,7 +37,8 @@ h2{
     padding-right: 0;
 }
 .botones{
-    background: #b27878;
+    /* background: #b27878; */
+    background-color: #d7b7a2;
     padding: 10px 20px 10px 20px;
     color: white;
     border-radius: 24px;
@@ -143,7 +144,8 @@ header div i{
 /* Seccion Tiempo */
 #tiempo{
     grid-template-columns: 1fr;
-    background: #b27878;
+    /* background: #b27878; */
+    background-color: #d7b7a2;
     color: white;
     letter-spacing: 3px;
     padding:10px 0 10px 0;
@@ -171,7 +173,7 @@ header div i{
     grid-template-columns: 1fr;
     margin-top: 25%;
     padding: 2% 0% 4% 0%;
-    background-color: #b27878;
+    /* background-color: #b27878; */
 }
 /* Seccion Confirmacion */
 #confirmacion{
@@ -212,7 +214,8 @@ header div i{
     grid-template-columns: 1fr;
     margin: 10% 0 0 0;
     background:#81e0ac;
-    background: #b27878;
+   /*  background: #b27878; */
+   background-color: #d7b7a2;
     padding: 5% 0 5% 0;
     color: white;
 }
@@ -239,7 +242,8 @@ header div i{
 /* Seccion Gracias */
 #gracias{
     grid-template-columns: 1fr;
-    background-image: linear-gradient(to right, #a7741a, #e9c95b);
+    /* background-image: linear-gradient(to right, #a7741a, #e9c95b); */
+    background-color: black;
     padding: 3% 0 3% 0;
     color: white;
     text-shadow: 1px 1px 1px black;
