@@ -159,10 +159,13 @@ header div i{
     font-weight: lighter;
 }
 
-/* Seccion Fiesta */
-#fiesta{
+/* Seccion Lugar */
+#lugar{
     grid-template-columns: 1fr;
-    margin-top: 25%;
+    flex-wrap:wrap;
+}
+#ceremonia p{
+    margin-bottom: 50px;
 }
 #fiesta p{
     margin-bottom: 50px;
@@ -272,8 +275,17 @@ footer{
 
 
 @media (min-width:720px){
-    #fiesta,#instagram,#galeria,#confirmacion,#canciones{
+    #lugar,#instagram,#galeria,#confirmacion,#canciones{
         margin-top: 10%;
+    }
+    #lugar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #fiesta, #ceremonia{
+        width: 40%!important;
+        margin: auto;
     }
     #gracias{
         margin-top: 0;
