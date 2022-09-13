@@ -93,7 +93,7 @@ h2{
 
 /* Seccion header */
 header{
-    background: url(imagenes/casamiento4.jpg) no-repeat center center fixed;
+    background: url(imagenes/abelFoto.png) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -110,7 +110,7 @@ header div{
     text-shadow: 1px 1px 1px black;
 }
 header div h1{
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 1px black;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Pinyon Script', cursive;
@@ -170,6 +170,8 @@ header div i{
 #galeria{
     grid-template-columns: 1fr;
     margin-top: 25%;
+    padding: 2% 0% 4% 0%;
+    background-color: #b27878;
 }
 /* Seccion Confirmacion */
 #confirmacion{
